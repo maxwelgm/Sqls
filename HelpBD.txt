@@ -1,0 +1,31 @@
+UPATP
+UPATP#PROD01
+
+PRO
+PRO#00PROD
+
+UCPROD
+scp#1ucpr0d
+
+UNCPROD
+SCPROD3#07
+
+SCPI	
+Usuário de Integração: SCPI_INTEGRACAO_SCPROD
+Senha: h#S04mcj56
+String de Conexão:
+Brains_oradsv10 =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = brains)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = oradsv10.petrobras.com.br)
+    )
+  )
+  
+  
+Alter Session Set nls_language='BRAZILIAN PORTUGUESE';
+Alter Session Set NLS_TERRITORY = 'BRAZIL';
+Alter Session Set NLS_NUMERIC_CHARACTERS=',.';
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
